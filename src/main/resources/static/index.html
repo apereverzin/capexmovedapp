@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CapexMove</title>
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+    .ui-dialog-titlebar-close {
+    background: url("./images/ui-icons_888888_256x240.png") repeat scroll -93px -128px rgba(0, 0, 0, 0);
+    border: medium none;
+    }
+    .ui-dialog-titlebar-close:hover {
+    background: url("./images/ui-icons_222222_256x240.png") repeat scroll -93px -128px rgba(0, 0, 0, 0);
+    }
+    </style>
+    <script type="text/javascript" src="./js/web3.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootbox.min.js"></script>
+    <script type="text/javascript" src="./js/smartbond.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var newDate = new Date();
+        })
+    </script>
+</head>
+
+<body>
+<div>
+    <div class="formPanel">
+        <div>
+            <div class="inputTitle">Bond Issuer Address</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="bondIssuerAddress"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Investor Address</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="investorAddress"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Bond Name</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="bondName"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Bond Face Value (Wei)</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="bondFaceValueInWei"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Bond Maturity (Sec)</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="bondMaturityInSeconds"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Number of Coupon Payments</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="numberOfCouponPayments"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Coupon Payment (Wei)</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="couponPaymentInWei"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Total Number of Debt Tokens</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="totalNumberOfDebtTokens"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Debt Token Name</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="debtTokenName"/>
+            </div>
+        </div>
+        <div>
+            <div class="inputTitle">Debt Token Symbol</div>
+            <div class="inputValue">
+                <input class="inputText textDecoration" type="text" id="debtTokenSymbol"/>
+            </div>
+        </div>
+        <div>
+            <div class="formEmptyPanel">
+            </div>
+            <div class="formButtonPanel">
+                <a href="#" onclick="createSmartBond()" class="btn btn-primary">Create Smart Bond</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

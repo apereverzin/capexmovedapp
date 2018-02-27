@@ -1,0 +1,176 @@
+.panelBackground {
+    background-color:rgba(64, 64, 128, 0.3);
+}
+.textDecoration {
+    background-color:rgba(64, 64, 128, 0.1);
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 3px;
+}
+
+.memberInfPanel {
+    padding-left: .6em;
+    padding-right: .6em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    margin-left: 1.4em;
+    margin-right: 0;
+    display: table;
+    border-radius: 5px;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.memberInfTitle {
+    display: table-cell;
+    width: 150px;
+    font-weight: bold;
+}
+.memberInfValue {
+    display: table-cell;
+    width: 300px;
+}
+
+.formPanel {
+    padding-left: .6em;
+    padding-right: .6em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    display: table;
+    border-radius: 5px;
+    background-color: rgba(64, 64, 128, 0.3);
+    width: 100%;
+}
+.inputTitle {
+    display: table-cell;
+    width: 200px;
+    font-weight: bold;
+}
+.inputValue {
+    display: table-cell;
+    width: 90%;
+}
+.inputText {
+    margin-bottom: .2em;
+    padding-left: 5px;
+    width: 100%;
+}
+.formButtonPanel {
+    display: table-cell;
+    float: right;
+}
+.formEmptyPanel {
+    display: table-cell;
+}
+
+.formPanel > div, .formPanel > form > div {
+    display: table-row;
+}
+
+.listPanel {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.listItemsTablePanel {
+    padding: .2em .6em;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: table-cell;
+}
+
+.listPanel > div {
+    display: table-row;
+}
+
+.listAndViewPanel {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.listAndViewPanelRow {
+    display: table-row;
+    width: 100%;
+}
+.listAndViewListPanel {
+    padding: .2em .6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: table-cell;
+}
+.listAndViewViewPanel {
+    padding: .2em .6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: table-cell;
+    border-top: 5px solid transparent;
+}
+
+.listAndViewPanel > div {
+    display: table-row;
+}
+
+.listAndListPanel {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.listAndListListPanel {
+    padding: .2em .6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: table-cell;
+}
+
+.listAndListPanel > div {
+    display: table-row;
+}
+
+.listTable {
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.listTable td, .listTable th {
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px;
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+.listTable th {
+    text-align: center;
+    background: rgba(64, 64, 128, 0.0);
+    font-weight: bold;
+}
+.listTable td {
+    background: rgba(64, 64, 128, 0.0);
+    text-align: center;
+}
+.listTable tr:nth-child(even) td {
+    background: rgba(64, 64, 128, 0.0);
+}
+.listTable tr:nth-child(odd) td {
+    background: rgba(64, 64, 128, 0.0);
+}
+/*tr td:hover {
+    background: #666; color: #FFF;
+}*/
+
+.itemView {
+    width: 100%;
+}
+
+.itemView th {
+    font-weight: bold;
+}
